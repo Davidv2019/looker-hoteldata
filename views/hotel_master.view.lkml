@@ -31,6 +31,6 @@ view: hotel_master {
   }
   dimension : RoomType_RoomID {
     type : string
-    sql:  ${room_type} ||','||${room_id} ;;
+    sql:  ${room_type} ||','||${room_no} ;;
   }
 }
