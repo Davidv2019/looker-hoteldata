@@ -24,7 +24,10 @@ view: hotel_master {
     type: string
     sql: ${TABLE}.RoomType ;;
   }
-
+  dimension: no_type {
+    type: string
+    sql: ${room_no} || ' ' || ${room_type} ;;
+  }
   measure: count {
     type: count
     drill_fields: []
