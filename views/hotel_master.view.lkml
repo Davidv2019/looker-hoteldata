@@ -29,4 +29,8 @@ view: hotel_master {
     type: count
     drill_fields: []
   }
+  dimension : RoomType_RoomID {
+    type : string
+    sql:  ${room_type} || ' , ' ||${room_id} ;;
+  }
 }
