@@ -26,7 +26,7 @@ view: hotel_master {
   }
   dimension : id_no {
     type: string
-    sql:CONCAT( emp_name, emp_middlename, emp_lastname ) ;;
+    sql:CONCAT( ${room_id}, ${room_no} ) ;;
   }
 
   measure: count {
