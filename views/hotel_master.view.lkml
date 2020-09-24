@@ -24,6 +24,11 @@ view: hotel_master {
     type: string
     sql: ${TABLE}.RoomType ;;
   }
+  dimension : id_no {
+    type: string
+    sql:CONCAT( emp_name, emp_middlename, emp_lastname ) ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
