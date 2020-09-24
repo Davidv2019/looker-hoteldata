@@ -2,7 +2,7 @@ view: hotel_master {
   sql_table_name: dbo.HotelMaster ;;
 
   dimension: prize {
-    type: string
+    type: number
     sql: ${TABLE}.Prize ;;
   }
 
