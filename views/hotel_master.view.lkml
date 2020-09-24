@@ -20,6 +20,10 @@ view: hotel_master {
     type: string
     sql: ${TABLE}.RoomType ;;
   }
+  dimension: room_type1 {
+    type: string
+    sql: ${TABLE}.RoomType ;;
+  }
 
   measure: count {
     type: count
