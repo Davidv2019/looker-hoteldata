@@ -28,7 +28,10 @@ view: hotel_master {
     type: string
     sql:CONCAT( ${room_id}, ${room_no} ) ;;
   }
-
+  dimension : tax_prize {
+    type: string
+    sql: ${prize} * 0.08 ;;
+  }
   measure: count {
     type: count
     drill_fields: []
